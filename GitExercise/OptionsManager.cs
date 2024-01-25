@@ -10,7 +10,8 @@ namespace GitExercise
             "s - Subtract",
             "m - Multiply",
             "d - Divide",
-            "sabs - Substract Abs"
+            "sabs - Substract Abs",
+            "ex - Exit"
         };
 
         public static void Add(double a, double b)
@@ -36,6 +37,11 @@ namespace GitExercise
         public static void SubtractAbs(double a, double b)
         {
             Console.WriteLine($"|{a} - {b}| = {Math.Abs(a - b)}");
+        }
+
+        public static void DivideRemainder(double a, double b)
+        {
+            Console.WriteLine($"{a} % {b} = {a % b}");
         }
     }
 }
